@@ -1,45 +1,27 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
-        <title>Four Sorting Algorithms</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-            body {
-                font-family: "Inter", serif;
-                font-optical-sizing: auto;
-                font-style: normal;
-            }
-            .AlgorithmType {
-                font-size: 24px;
-                text-decoration: underline;
-            }
-            .JavaScript {
-                font-family: "Source Code Pro", serif;
-                font-optical-sizing: auto;
-                font-style: normal;
-            }
-            #SFSU {
-                background-color: #231161;
-                font-weight: bold;
-                color: #C99700;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Introduction to Basic Sorting Algorithms</h1>
-            <p>This page provides basic information and JavaScript implementations of four fundamental sorting algorithms: Insertion Sort, Selection Sort, Merge Sort, and Quick Sort.</p>
-        </header>
-        <main>
-            <div class="SortingAlgorithms" id="InsertionSort">
-                <h3 class="AlgorithmType">Insertion Sort</h3>
-                    <p class="AlgorithmDescription">
-                        Insertion sort is a simple sorting algorithm that builds the sorted array one item at a time. It is much like sorting playing cards in your hands.<br><br>
-                        <pre>
-                            <code class="JavaScript">
+
+<head>
+    <title>Four Sorting Algorithms</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Introduction to Basic Sorting Algorithms</h1>
+        <p>This page provides basic information and JavaScript implementations of four fundamental sorting algorithms:
+            Insertion Sort, Selection Sort, Merge Sort, and Quick Sort.</p>
+    </header>
+    <main>
+        <div class="SortingAlgorithms" id="InsertionSort">
+            <h3 class="AlgorithmType">Insertion Sort</h3>
+            <p class="AlgorithmDescription">
+                Insertion sort is a simple sorting algorithm that builds the sorted array one item at a time. It is much
+                like sorting playing cards in your hands.<br><br>
+            <pre>
+                <code class="JavaScript">
 // Insertion Sort Implementation
 function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
@@ -53,16 +35,17 @@ function insertionSort(arr) {
     }
     return arr;
 }
-                            </code>
-                        </pre>
-                    </p>
-            </div>
-            <div class="SortingAlgorithms" id="SelectionSort">
-                <h3 class="AlgorithmType">Selection Sort</h3>
-                    <p class="AlgorithmDescription">
-                        Selection sort is a simple algorithm that repeatedly selects the smallest element from the unsorted portion and places it in the sorted portion.<br><br>
-                        <pre>
-                            <code class="JavaScript">
+                </code>
+            </pre>
+            </p>
+        </div>
+        <div class="SortingAlgorithms" id="SelectionSort">
+            <h3 class="AlgorithmType">Selection Sort</h3>
+            <p class="AlgorithmDescription">
+                Selection sort is a simple algorithm that repeatedly selects the smallest element from the unsorted
+                portion and places it in the sorted portion.<br><br>
+            <pre>
+                <code class="JavaScript">
 // Selection Sort Implementation
 function selectionSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
@@ -76,16 +59,17 @@ function selectionSort(arr) {
     }
     return arr;
 }
-                            </code>
-                        </pre>
-                    </p>
-            </div>
-            <div class="SortingAlgorithms" id="MergeSort">
-                <h3 class="AlgorithmType">Merge Sort</h3>
-                    <p class="AlgorithmDescription">
-                        Merge sort is a divide-and-conquer algorithm that splits the array into halves, recursively sorts them, and then merges the sorted halves.<br><br>   
-                        <pre>
-                            <code class="JavaScript">
+                </code>
+            </pre>
+            </p>
+        </div>
+        <div class="SortingAlgorithms" id="MergeSort">
+            <h3 class="AlgorithmType">Merge Sort</h3>
+            <p class="AlgorithmDescription">
+                Merge sort is a divide-and-conquer algorithm that splits the array into halves, recursively sorts them,
+                and then merges the sorted halves.<br><br>
+            <pre>
+                <code class="JavaScript">
 // Merge Sort Implementation
 function mergeSort(arr) {
     if (arr.length <= 1) return arr;
@@ -113,16 +97,17 @@ function merge(left, right) {
 
     return result.concat(left.slice(i)).concat(right.slice(j));
 }
-                            </code>
-                        </pre>
-                    </p>
-            </div>
-            <div class="SortingAlgorithms" id="QuickSort">
-                <h3 class="AlgorithmType">Quick Sort</h3>
-                    <p class="AlgorithmDescription">
-                        Quick sort is a divide-and-conquer algorithm that selects a pivot element, partitions the array around the pivot, and recursively sorts the partitions.<br><br>
-                        <pre>
-                            <code class="JavaScript">
+                </code>
+            </pre>
+            </p>
+        </div>
+        <div class="SortingAlgorithms" id="QuickSort">
+            <h3 class="AlgorithmType">Quick Sort</h3>
+            <p class="AlgorithmDescription">
+                Quick sort is a divide-and-conquer algorithm that selects a pivot element, partitions the array around
+                the pivot, and recursively sorts the partitions.<br><br>
+            <pre>
+                <code class="JavaScript">
 // Quick Sort Implementation
 function quickSort(arr) {
     if (arr.length <= 1) return arr;
@@ -141,13 +126,14 @@ function quickSort(arr) {
 
     return [...quickSort(left), pivot, ...quickSort(right)];
 }
-                            </code>
-                        </pre>
-                    </p>
-            </div>    
-        </main>
-        <footer>
-            <p id="SFSU">© 2025 SF State University - Intro to Web Development</p>
-        </footer>
-    </body>
+                </code>
+            </pre>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p id="SFSU">© 2025 SF State University - Intro to Web Development</p>
+    </footer>
+</body>
+
 </html>
